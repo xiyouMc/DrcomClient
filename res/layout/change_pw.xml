@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+      <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@color/black" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:gravity="center"
+            android:text="修改密码"
+            android:textColor="@color/white"
+            android:textSize="20dip" />
+    </RelativeLayout>
+    <EditText
+        android:id="@+id/old"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="旧密码"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/newpw"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="新密码"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/cof"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="确认密码"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确定" />
+
+</LinearLayout>
